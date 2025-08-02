@@ -1,0 +1,24 @@
+/* 807d7e */
+#header nav a {
+  color: #807d7e;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+#header nav a:hover {
+  color: black;
+  font-weight: bold;
+}
+#header nav a.logo {
+  color: black;
+}
+/* Active menu link */
+#header nav a.active {
+  color: #000; /* Light mode */
+  font-weight: 700;
+}
+/* Active icon */
+#header nav a.icon-active {
+  color: #000;
+}
+
+
