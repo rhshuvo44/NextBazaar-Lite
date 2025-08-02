@@ -21,4 +21,11 @@
   color: #000;
 }
 
+/* home pages banner pagination  */
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.4); /* default bullet */
+}
 
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important; /* active bullet white */
+}

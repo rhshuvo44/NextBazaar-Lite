@@ -22,11 +22,25 @@ document
   .getElementById("dark-toggle-mobile")
   .addEventListener("click", toggleDark);
 // Highlight active nav link based on current URL
-const links = document.querySelectorAll('#header nav a');
+const links = document.querySelectorAll("#header nav a");
 const current = window.location.pathname;
 
-links.forEach(link => {
-  if (link.href.includes(`${current}`) && current !== '/') {
-    link.classList.add('active');
+links.forEach((link) => {
+  if (link.href.includes(`${current}`) && current !== "/") {
+    link.classList.add("active");
   }
+});
+//  <!-- Initialize Swiper -->
+
+var swiper = new Swiper(".mySwiper", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
 });
